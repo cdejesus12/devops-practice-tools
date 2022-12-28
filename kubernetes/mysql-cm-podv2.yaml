@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mysql-demo-pod
+spec:
+  containers:
+    - name: demo
+      image: mysql
+      ports:
+        - containerPort: 3306
+          name: db
+      env:
+        - name: MYSQL_ROOT_PASSWORD
+          valueFrom: 
+            configMapKeyRef:
+              name: bd-demo   #nombre del recurso CM campo metadata name       
+              key: data_root  #
+
+        - name: MYSQL_USER
+          valueFrom: 
+            configMapKeyRef:
+              name: bd-demo2   #nombre del recurso CM campo metadata name       
+              key: data_root2  #

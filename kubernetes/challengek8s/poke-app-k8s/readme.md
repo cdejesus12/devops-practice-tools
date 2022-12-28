@@ -1,6 +1,6 @@
-## POKEMON DEVOPS CHALLENGE 
+## POKEMON DEVOPS CHALLENGE + KUBERNETES
 
-La empresa ZERO Technology, solicita al Equipo de DevOps Trainer, la contenerizacion de su aplicacion "Pokemon DevOps" en la que incluye:
+La empresa ZERO Technology, solicita al Equipo de DevOps Trainer, la contenerizacion de su aplicacion "Pokemon DevOps" y despliegues en kubernetes en la que incluye:
 
 - Backend
 - Frontend
@@ -62,24 +62,10 @@ por process.env.REACT_APP_URL_DEVELOPMENT
 - Esto hara que el frontend se comunique al servicio expuesto en docker-compose, ya que desea ejecutarlo localmente
 
 
-### Requisitos:
-
-Tener instalado docker y docker-compose
-
-una vez teniendo estas herramientas ejecutar
-```
-docker-compose up -d
-```
-
-- Cuando finalice el proceso ir a la ruta http://localhost:3000 y obtendra el sitio web el cual esta comunicandose con el container del puerto  8000 de la api pero esta vez los containers estan siendo gestionados por docker-compose
-
 ### Entregable
 
-- Dockerfile Frontend y Backend
-- Subir la Imagen del Frontend y Backend al Registry Docker Hub
-- Docker-compose
-- Opcional *script que permita construir la imagen, tagear y subirla al registry
-- Opcional * en ec2
+- Subir imagen al registry dockerhub
+- Manifiestos deployments y services
 - Documentación y Arquitectura
 
 ## Resultado
