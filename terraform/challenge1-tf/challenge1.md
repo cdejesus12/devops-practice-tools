@@ -30,12 +30,14 @@ En esta tarea vamos a desplegar una aplicación (Web) que requiere de dos servid
 
 ## Requisitos
 - Crear los recursos con Terraform
+- Nombre del servidor: bootcamp-server-1, bootcamp-server-2
 - Apuntar el aprovisionamiento a la cuenta Sandbox AWS Academy
 - Tipo de instancia: t2.micro
 - ami Amazon Linux: ami-0fe472d8a85bc7b0e
 - Vpc Default
 - Subnet (ayb)
-- Security Group servidor ingress TCP [80] egress ALL Trafics ["0.0.0.0/0"]
+- Security Group Servidor Ingress TCP [80] egress ALL Trafics ["0.0.0.0/0"]
+- ALB nombre: bootcamp-web
 - Security Group ALB ingress TCP [80] egress ALL Trafics ["0.0.0.0/0"]
 - Asociar al recurso del servidor un userdata que contenga un servidor web (apache ó nginx) y que contenga esta página estatica que esta ubicado en este repositorio https://github.com/roxsross/front-devops-github.git
 
