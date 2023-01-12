@@ -26,7 +26,7 @@ Usted es elegido como DevOps Trainer en una organización cuyo principal foco es
 En esta tarea vamos a desplegar una aplicación (Web) que requiere de dos servidores (AWS EC2) con la ami Amazon Linux en dos zonas de disponibilidad (a y b) por los cuales se van a balancear la carga con (AWS Load Balancer).
 
 - Arquitectura 
-![Arquitectura](arquitectura.png)
+![Arquitectura](arquitectura.jpg)
 
 ## Requisitos
 - Crear los recursos con Terraform
