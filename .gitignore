@@ -3,3 +3,5 @@ node_modules/
 .lock.hcl
 .terraform.*
 .terraform
+terraform.tfstate.backup
+*.pub
